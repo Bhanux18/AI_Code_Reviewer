@@ -10,9 +10,7 @@ st.write("-"*30)
 query_text=st.text_area("**Please Input Your Code Here..**",placeholder="Code it or Paste it ..")
 
 # Defining AI functionalities
-#genz.configure(api_key=os.getenv("api_key"))
-api="AIzaSyBNgkWZQdHQ1f4_YCJUOzKUzRcYbYKvn2Q"
-genz.configure(api_key=api)
+genz.configure(api_key=os.getenv("api_key"))
 ai_role="""Act like an expert programmer in python and R.Review the given code for simple correct & clean code.
            show errors,bugs and suggest code improvements in consise ways .
            Represent code in formats like without defining a function and with defining a function.
